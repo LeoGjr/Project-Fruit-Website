@@ -1,0 +1,41 @@
+/*=============== HOME ===============*/
+.home{
+   position: relative;
+
+   &__container{
+      padding-top: 2.5rem;
+      row-gap: 2rem;
+   }
+   &__data{
+      position: relative;
+      text-align: center;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-family: var(--second-font);
+      margin-bottom: 1rem;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__fruit,
+   &__branch{
+      filter: var(--filter-img);
+      position: absolute;
+   }
+   &__fruit{
+      width: 40px;
+      top: 6.75rem;
+      left: 1rem;
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+      filter: var(--shadow-img);
+   }
+   &__branch{
+      width: 120px;
+      right: -3rem;
+      bottom: 15rem;
+   }
+}

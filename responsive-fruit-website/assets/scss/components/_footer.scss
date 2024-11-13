@@ -1,0 +1,89 @@
+/*=============== FOOTER ===============*/
+.footer{
+   padding-block: 3rem 2rem;
+   overflow: hidden;
+   
+   &__container{
+      position: relative;
+      row-gap: 3rem;
+   }
+   &__logo{
+      display: inline-flex;
+      align-items: center;
+      column-gap: .25rem;
+      font-size: var(--h1-font-size);
+      font-family: var(--second-font);
+      color: var(--title-color);
+      margin-bottom: 1rem;
+
+      & img{
+         width: 1.25rem;
+      }
+   }
+   &__data{
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      gap: 3rem;
+   }
+   &__title{
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-semi-bold);
+      margin-bottom: 1rem;
+   }
+   &__links{
+      display: grid;
+      row-gap: .75rem;
+   }
+   &__link{
+      color: var(--text-color);
+      transition: color .4s;
+
+      &:hover{
+         color: var(--first-color);
+      }
+   }
+   &__social{
+      display: flex;
+      column-gap: 1rem;
+
+      &-link{
+         font-size: 1.25rem;
+         color: var(--first-color);
+         transition: transform .4s;
+
+         &:hover{
+            transform: translateY(-.25rem);
+         }
+      }
+   }
+   &__fruit,
+   &__branch-1,
+   &__branch-2{
+      filter: var(--filter-img);
+      position: absolute;
+   }
+   &__fruit{
+      width: 40px;
+      bottom: -2rem;
+      right: 2rem;
+   }
+   &__branch-1{
+      width: 120px;
+      right: -3rem;
+      top: 0;
+      rotate: -90deg;
+   }
+   &__branch-2{
+      width: 120px;
+      left: -5rem;
+      bottom: -10rem;
+      rotate: 75deg;
+   }
+   &__copy{
+      display: block;
+      margin-top: 7rem;
+      text-align: center;
+      font-size: var(--small-font-size);
+      color: var(--text-color-light);
+   }
+}

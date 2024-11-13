@@ -1,0 +1,36 @@
+/*=============== ABOUT ===============*/
+.about{
+   position: relative;
+
+   &__container{
+      row-gap: 2rem;
+   }
+   &__data{
+      position: relative;
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__fruit,
+   &__branch{
+      filter: var(--filter-img);
+      position: absolute;
+   }
+   &__fruit{
+      width: 40px;
+      bottom: 2rem;
+      right: 1rem;
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+      filter: var(--shadow-img);
+   }
+   &__branch{
+      width: 120px;
+      rotate: 60deg;
+      left: -3.5rem;
+      bottom: 15rem;
+   }
+}
